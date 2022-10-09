@@ -20,6 +20,6 @@ admin.site.site_header = ""
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('https://sidd09k.github.io/Game-Distribution-Website/', include('Game.urls')),
+    path('', include('Game.urls')),
     path('account/', include('accounts.urls'))
 ]
