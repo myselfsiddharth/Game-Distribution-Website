@@ -5,9 +5,9 @@ from .models import Game
 
 # Create your views here.
 
-def main_page(request):
+def index(request):
     Games = Game.objects.filter(Popular=True)
-    return render(request, 'main.html', {'Games': Games})
+    return render(request, 'index.html', {'Games': Games})
 
 
 def games(request):
